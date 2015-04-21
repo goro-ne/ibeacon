@@ -222,6 +222,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 ```
 
+---
+
+
+### iBeaconを使用前に設定しとくこと
+http://qiita.com/mzuk/items/9a051120b26a49902888
+
+info.plistに「NSLocationWhenInUseUsageDescription」か、「NSLocationAlwaysUsageDescription」を入れます。
+TypeはString、Valueはポップアップで表示されるメッセージ。
+
+
+
+
+---
+
+### エラー
 
 /Users/g-hayakawa/repos/ibeacon/app/ibeacon-test/ibeacon-test/ViewController.swift:174:10: Objective-C method 'locationManager:didRangeBeacons:inRegion:' provided by method 'locationManager(_:didRangeBeacons:inRegion:)' conflicts with optional requirement method 'locationManager(_:didRangeBeacons:inRegion:)' in protocol 'CLLocationManagerDelegate'
 
